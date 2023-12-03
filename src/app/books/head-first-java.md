@@ -1,5 +1,5 @@
 ---
-title: 'Heads First Java'
+title: 'Head First: Java'
 author: 'Kathy Sierra, Bert Bates & Trisha Gee'
 date: '10-10-2023'
 img: '/img/books/Head-First-Java.jpg'
