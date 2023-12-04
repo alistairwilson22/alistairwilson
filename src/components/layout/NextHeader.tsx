@@ -37,7 +37,7 @@ export default function NextHeader() {
         />
       <NavbarBrand>
         <Link href="/">
-            <Image src="/img/layout/army-wilson.jpg" alt="Alistair Wilson" width={144} height={144}/>
+            <Image src="/img/layout/army-wilson.jpg" alt="Alistair Wilson" width={64} height={64}/>
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

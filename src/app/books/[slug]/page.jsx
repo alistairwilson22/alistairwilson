@@ -8,7 +8,7 @@ export default function Book({ params }) {
   return (
     <main>
 
-      <div className="bg-[url(/img/background/library-shelves.jpg)] bg-cover min-w-screen min-h-64 text-white flex flex-col justify-center items-center">
+      <div className="bg-[url(/img/background/library-shelves.jpg)] bg-cover min-w-screen text-white flex flex-col justify-center items-center">
       <Card className="pb-4 m-4 max-w-[250px]" key={data.slug} >
         <Image
             alt={data.title}
