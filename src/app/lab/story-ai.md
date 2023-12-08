@@ -2,7 +2,7 @@
 title: 'Story AI'
 creator: 'Alistair Wilson'
 date: '12-09-2023'
-img: '/img/books/Code-Hidden-Language.jpg'
+img: '/img/lab/story-ai-start.png'
 tags:
   -  React
   -  JavaScript
@@ -20,6 +20,14 @@ github: 'https://github.com/alistairwilson22/story-ai'
 - Random story prompts
 - AI image generation
 - AI story generation
+
+## See it in action
+
+| Story prompts      | Generated story | Continue or conclude |
+:-------------:|:-------------:|:-----:
+![alt story-prompts](/img/lab/story-ai-start.png)  |  ![alt generated-story](/img/lab/story-ai-story.png) | ![alt pokedex-search](/img/lab/story-ai-end.png)
+
+
 
 ## How was it made?  
 

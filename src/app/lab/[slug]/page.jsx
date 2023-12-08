@@ -1,5 +1,6 @@
 import { getLabContent } from "@/helpers/labHelpers"
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm';
 import {Card, CardBody, Image} from "@nextui-org/react";
 
 export default function LabItem({ params }) {
@@ -26,7 +27,7 @@ export default function LabItem({ params }) {
       </div>
 
       <div className="flex min-h-screen flex-col justify-between p-24">
-        <ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {content}
         </ReactMarkdown>
       </div>

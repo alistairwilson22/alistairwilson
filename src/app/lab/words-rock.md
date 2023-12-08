@@ -2,7 +2,7 @@
 title: 'Words Rock'
 creator: 'Alistair Wilson'
 date: '23-10-2023'
-img: '/img/books/Code-Hidden-Language.jpg'
+img: '/img/lab/wordsrock-pokedex.png'
 tags:
   -  Laravel
   -  PHP
@@ -26,6 +26,13 @@ I wanted to create something similar for my girls to expand their English skills
 - Pokedex to search and buy pokemon
 - Own pokedex of purchased pokemon
 - Leadersboard
+
+## See it in action
+
+| Spelling Game      | Viewing the Leadersboard | Searching the Pokedex |
+:-------------:|:-------------:|:-----:
+![alt game-view](/img/lab/wordsrock-game.png)  |  ![alt leadersboard](/img/lab/wordsrock-leadersboard.png) | ![alt pokedex-search](/img/lab/wordsrock-pokedex.png)
+
 
 ## How was it made?  
 
