@@ -1,4 +1,4 @@
-# Alistair Wilson's porfolio website
+# Alistair Wilson's portfolio website
 
 A work in progress.
 
