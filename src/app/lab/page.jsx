@@ -1,6 +1,6 @@
 import {getListOfLab} from '@/helpers/labHelpers';
 import Link from 'next/link';
-import {Card, CardBody, Image} from "@nextui-org/react";
+import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 
 
 export default function Lab() {
@@ -24,7 +24,7 @@ export default function Lab() {
               <Link href={`lab/${item.slug}`}>
               <Image
                 alt={item.title}
-                className="object-cover rounded-xl"
+                className="object-cover rounded-xl m-auto"
                 src={item.img}
                 width={270}
                 max-height="300px"
@@ -33,8 +33,8 @@ export default function Lab() {
                   <h4 className="font-bold text-large">{item.title}</h4>
                   <small className="text-default-500">{item.date}</small>
                   <p className="text-tiny uppercase font-bold">{item.creator}</p>
-                </CardBody>
-                </Link>
+              </CardBody>
+              </Link>
             </Card>
           ))}
         </div>

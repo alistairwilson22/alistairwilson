@@ -1,11 +1,12 @@
 ---
 title: 'Linux Basics For Hackers'
 author: 'OccupyTheWeb'
-date: '03-12-2023'
+date: '10-12-2023'
 img: '/img/books/linux-basics-for-hackers.jpg'
 tags:
   -  Linux
   -  Hacking
+  -  Python
 ---
 
 *Linux Basics For Hackers* is a short and sweet book. The book does live upto it's title more than I expected. It is more about Linux than Hacking, and it does cover the Linux Basics rather than going super advanced. So I came into the book with perhaps the wrong expectations thinking there'd be some interesting hacking scripts disected when really it's an overview of core Linux commands from the lense of how you might use them when doing exploratory hacking of a system.

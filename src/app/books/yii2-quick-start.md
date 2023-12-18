@@ -6,12 +6,11 @@ img: '/img/books/yii2-quick-start.jpg'
 tags:
   -  Yii2
   -  PHP
-status: reading
 ---
 
 I picked up this book to help get to grips with a new PHP framework I'll be working with commercially starting Jan 2024.
 
-It's a decent start, although the topics covered are pretty much identical to what I found from a YouTube crash course.
+It's a decent start, although the topics covered are pretty much identical to what I found from a YouTube crash course. The content isn't super different to what you find in the Yii documentation either.
 
 Sadly there isn't as much learning resources out there for Yii framework as there are for Laravel or Symfony. Which is a shame as Yii has alot of potential and it's considered in the top 5 PHP frameworks, it's just that the PHP frameworks are dwarfed by Laravel, Symfony and CMSes like Drupal and Wordpress. So I had a much better learning experience with both Laravel, Drupal and Wordprss just because there's more resources out there.
 

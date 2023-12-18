@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '../components/layout/Header';
 import NextHeader from '../components/layout/NextHeader';
 import Footer from '../components/layout/Footer';
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 const roboto = Roboto({ 
   weight: ['300', '400', '500', '700'],
@@ -34,7 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${roboto_slab.variable}`}>
       <NextHeader />
-      {children}
+        <ReCaptchaProvider reCaptchaKey="6Le43y4pAAAAAFr5yMpeA19MKCIMDaxHxlBsZbPj">
+        {children}
+        </ReCaptchaProvider>
       <Footer />
       </body>
     </html>

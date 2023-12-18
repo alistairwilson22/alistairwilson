@@ -8,6 +8,7 @@ tags:
   -  JavaScript
   -  ChatGPT
   -  AI
+  -  Node
 github: 'https://github.com/alistairwilson22/story-ai'
 ---
 
