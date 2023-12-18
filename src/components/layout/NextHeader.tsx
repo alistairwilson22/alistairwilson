@@ -30,20 +30,20 @@ export default function NextHeader() {
     ]
 
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll className="bg-[#465B65] p-2">
         <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="sm:hidden text-white"
         />
       <NavbarBrand>
         <Link href="/">
-            <Image src="/img/layout/army-wilson.jpg" alt="Alistair Wilson" width={64} height={64}/>
+            <Image src="/img/layout/logo.png" alt="Alistair Wilson" width={64} height={64}/>
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       {links.map((item, index ) => (
         <NavbarItem key={index}>
-          <Link color="foreground" href={item.href}>
+          <Link className="text-white" href={item.href}>
             {item.name}
           </Link>
         </NavbarItem>
@@ -51,7 +51,7 @@ export default function NextHeader() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="/contact" variant="flat">
+          <Button as={Link} className="bg-white text-[#465B65]" href="mailto:hello@alistairwilson.co.uk" variant="flat">
             Contact
           </Button>
         </NavbarItem>
@@ -60,8 +60,7 @@ export default function NextHeader() {
         {links.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color="primary"
-              className="w-full"
+              className="w-full text-[#465B65]"
               href={item.href}
               size="lg"
             >

@@ -5,6 +5,7 @@ date: '05-10-2023'
 img: '/img/books/how-ai-works.jpg'
 tags:
   -  AI
+  -  TensorFlow
 ---
 
 *How AI Works* is a quick read that covers some of the modern history of AI from someone who's been in the industry and seen it transition over the last few decades. He has an interesting insight and take on the modern LLMs like Chat GPT and Bard on how intelligent they are. His take is that no they're not alive in the sense that other life is, but that during the learning process they've acquired an understanding of topics that seems deeper than just a next token / sentiment analysis. His thought being we need to research this kind of AI more.
