@@ -17,6 +17,6 @@ I may have been abit snobbish about Head First series in my review of *Head Firs
 The thing I like most about this is how the Design Patterns are alikened to real word implementations. So when looking at the *Decorator Pattern* it describes how Java's I/O Library makes heavy use of Decorators to help get a grip on the library and the Decorator pattern at the same time.
 
 Here's some notes for myself on the different design patterns:  
--  **Strategy** - Composition over inheritance. Behaviours are defined in interfaces and the sub-classes implement the interface instead of directly inheriting from the parent class.  
--  **Observer** - When there's a publisher (or subject) that needs to trigger updates on various observers, instead of adding a function in the subject for each observer that should be abstracted out into a subject class that stores a list of observers and a method to subscribe or unsubscribe to these updates. This follows the Open/Closed Principle.   
--  **Decorator** - 
+  -  **Strategy** - Composition over inheritance. Behaviours are defined in interfaces and the sub-classes implement the interface instead of directly inheriting from the parent class.  
+  -  **Observer** - When there's a publisher (or subject) that needs to trigger updates on various observers, instead of adding a function in the subject for each observer that should be abstracted out into a subject class that stores a list of observers and a method to subscribe or unsubscribe to these updates. This follows the Open/Closed Principle.   
+  -  **Decorator** - 
