@@ -17,3 +17,4 @@ Separate and distinguish code based on:
   -  Data (a fact)
 
 FP prefers Data to Calculations, and prefers Calculations to Actions
+

@@ -12,10 +12,12 @@ export default async function handler(req, res) {
       try {
         // Send email
         await transporter.sendMail({
-          from: 'me@alistairwilson.co.uk', // Sender's email address
+          from: 'webform@alistairwilson.co.uk', // Sender's email address
           to: 'hello@alistairwilson.co.uk', // Receiver's email address
           subject: 'New Contact Form Submission',
-          text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+          text: `Name: ${name}\n
+          Email: ${email}\n
+          Message: ${message}`,
         });
   
         res.status(200).json({ message: 'Email sent successfully' });
