@@ -1,6 +1,6 @@
 import {getListOfBooks} from '@/helpers/bookHelpers';
 import Link from 'next/link';
-import {Card, CardBody, Image} from "@nextui-org/react";
+import {Card, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 
 
 export default function Books() {
@@ -22,19 +22,32 @@ export default function Books() {
           {books.map(book => (
             <Card className="pb-4 m-4" key={book.slug} >
               <Link href={`books/${book.slug}`}>
-              <Image
-                alt={book.title}
-                className="object-cover rounded-xl m-auto"
-                src={book.img}
-                width={270}
-                max-height="300px"
-              />
-              <CardBody>
+                <Image
+                  alt={book.title}
+                  className="object-cover rounded-xl m-auto"
+                  src={book.img}
+                  width={270}
+                  max-height="300px"
+                />
+                <CardBody>
                   <h4 className="font-bold text-large">{book.title}</h4>
                   <small className="text-default-500">{book.date}</small>
                   <p className="text-tiny uppercase font-bold">{book.author}</p>
                 </CardBody>
-                </Link>
+              </Link>
+              <CardFooter>
+                <div className='inline-block'>
+                  {book.tags.map((tag, tagIndex) => { 
+                    const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
+                    return (
+                    <Link key={`${book.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
+                      <Button size="sm" radius="full">
+                        {tag}
+                      </Button>
+                    </Link>
+                  )})}
+                </div>
+              </CardFooter>
             </Card>
           ))}
         </div>

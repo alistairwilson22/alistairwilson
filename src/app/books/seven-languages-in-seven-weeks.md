@@ -1,11 +1,12 @@
 ---
 title: 'Seven Languages in Seven Weeks'
 author: 'Bruce A. Tate'
-date: '03-12-2023'
+date: '03-01-2024'
 img: '/img/books/seven-languages.jpg'
 tags:
   -  Ruby
   -  Io
+  -  Prolog
 ---
 
 **READING STILL IN PROGRESS**
@@ -22,4 +23,12 @@ Ruby is a pure Object Orientated Programming language, which means even strings 
 
 Io was a surprise for me, I've really quite enjoyed developing with Io. It's a very simple language with not much to learn to get started. I really like the assignment operator of ":=" (taken from SmallTalk) instead of using "=" so that you can test equality with a "=" instead of confusing equality and assignment.
 
-Like Ruby, Io allows you flexibity to change the fundamentals for a particular environment. It's a prototype languauge (like Javascript), so every thing is a clone of a Type (or object) and inherits all of their properties and methods. It follows a convention where an object that starts with a Capital letter is treated as a class, when there's a lowercase it's treated as an implementation or object instead of a class.
+Like Ruby, Io allows you flexibity to change the fundamentals for a particular environment (Domain Specific Language). It's a prototype languauge (like Javascript), so every thing is a clone of a Type (or object) and inherits all of their properties and methods. It follows a convention where an object that starts with a Capital letter is treated as a class, when there's a lowercase it's treated as an implementation or object instead of a class.
+
+IO has good concurrency features built in: co-routines, actors and futures.
+
+### Prolog
+
+I came to Prolog expecting it to be useful context for Ansible which is a declarative langauge. But it looks like Prolog might also have a decent use case for scheduling or coming up with possible variations on constrained resources. We can use Prolog to compute out problems with too many constraints to reasonably think through. One problem with Prolog is it'll provide an all or nothing approach, if it finds a possible viable schedule it'll give it, others you get a "no". But you could perhaps add in a few alternative constraints try the programme on all your preferred constraints and then relax the constraints one by one until you get a result.
+
+It's good for solving logic puzzles and riddles, it can show up missed assumptions but also can give frustraiting or confusing results. 

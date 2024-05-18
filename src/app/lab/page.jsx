@@ -1,6 +1,6 @@
 import {getListOfLab} from '@/helpers/labHelpers';
 import Link from 'next/link';
-import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
+import {Card, CardBody, CardFooter, Button, Image} from "@nextui-org/react";
 
 
 export default function Lab() {
@@ -35,6 +35,19 @@ export default function Lab() {
                   <p className="text-tiny uppercase font-bold">{item.creator}</p>
               </CardBody>
               </Link>
+              <CardFooter>
+                <div className='inline-block'>
+                  {item.tags.map((tag, tagIndex) => { 
+                    const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
+                    return (
+                    <Link key={`${item.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
+                      <Button size="sm" radius="full">
+                        {tag}
+                      </Button>
+                    </Link>
+                  )})}
+                </div>
+              </CardFooter>
             </Card>
           ))}
         </div>
