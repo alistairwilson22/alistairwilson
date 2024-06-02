@@ -6,6 +6,7 @@ img: '/img/books/Code-Hidden-Language.jpg'
 tags:
   -  Hardware
   -  Binary
+status: read
 ---
 
 Ah *Code: The Hidden Language of Computer Hardware and Software* I can only say complimentary things about this book.

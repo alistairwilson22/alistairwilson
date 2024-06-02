@@ -6,6 +6,7 @@ img: '/img/books/algorithms-to-live-by.jpg'
 tags:
   -  Algorithms
   -  Data Structures
+status: read
 ---
 
 This has taken me awhile to read, because there's so much in it to unpack. There are a crazy amount of references in here and about 35% of the book is footnotes. The best thing, it approaches algorithms and modern data and computer science in a way I've not seen before.
