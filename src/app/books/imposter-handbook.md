@@ -18,7 +18,7 @@ It's a good primer, and covers a broad range but not in very great depth. It's w
 Anyway I found it useful as it presented ideas for me which, while they haven't all sunk in deep have at least given me ideas of what to look into further. There's more value I can eek out of complexity theory than I have so that's something I'll have to read more on in the future.
 
 Something I'll take away to help understand the difference between a byte, kilobyte, gigabyte, terrabyte:  
-- 1 thousand seconds = around 17 minutes  
-- 1 million seconds = around 12 days  
-- 1 billion seconds = around 32 years  
-- 1 trillion seconds = around 316 centuries  
+  - 1 thousand seconds = around 17 minutes  
+  - 1 million seconds = around 12 days  
+  - 1 billion seconds = around 32 years  
+  - 1 trillion seconds = around 316 centuries  
