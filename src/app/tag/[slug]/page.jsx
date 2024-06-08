@@ -2,7 +2,7 @@ import { getListOfBooks } from '@/helpers/bookHelpers';
 import { getListOfLab } from '@/helpers/labHelpers';
 import Link from 'next/link';
 import { Books } from '@/components/sections/Books';
-import {Card, CardBody, CardFooter, Button, Image} from "@nextui-org/react";
+import { Card, CardBody, CardFooter, Button, Image } from "@nextui-org/react";
 
 export default function Tag({ params }) {
   const formattedSlug = params.slug.replace('-', ' ');
@@ -12,7 +12,6 @@ export default function Tag({ params }) {
     const lowercaseTags = book.tags.map((tag) => tag.toLowerCase());
     return lowercaseTags.includes(formattedSlug);
   });
-  console.log(books)
 
   const filteredLab = lab.filter((lab) => {
     const lowercaseTags = lab.tags.map((tag) => tag.toLowerCase());
@@ -39,36 +38,36 @@ export default function Tag({ params }) {
         ) : (
           filteredLab.map(item => (
             <Card className="pb-4 m-4" key={item.slug} >
-              <Link href={`lab/${item.slug}`}>
-              <Image
-                alt={item.title}
-                className="object-cover rounded-xl"
-                src={item.img}
-                width={270}
-                max-height="300px"
-              />
-              <CardBody>
-                <h4 className="font-bold text-large">{item.title}</h4>
-                <small className="text-default-500">{item.date}</small>
-                <p className="text-tiny uppercase font-bold">{item.creator}</p>
-              </CardBody>
+              <Link href={`/lab/${item.slug}`}>
+                <Image
+                  alt={item.title}
+                  className="object-cover rounded-xl"
+                  src={item.img}
+                  width={270}
+                  max-height="300px"
+                />
+                <CardBody>
+                  <h4 className="font-bold text-large">{item.title}</h4>
+                  <small className="text-default-500">{item.date}</small>
+                  <p className="text-tiny uppercase font-bold">{item.creator}</p>
+                </CardBody>
               </Link>
               <CardFooter>
                 <div className='inline-block'>
-                  {item.tags.map((tag, tagIndex) => { 
+                  {item.tags.map((tag, tagIndex) => {
                     const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
                     return (
-                    <Link key={`${item.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
-                      <Button size="sm" radius="full">
-                        {tag}
-                      </Button>
-                    </Link>
-                  )})}
+                      <Link key={`${item.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
+                        <Button size="sm" radius="full">
+                          {tag}
+                        </Button>
+                      </Link>
+                    )
+                  })}
                 </div>
               </CardFooter>
             </Card>
-          )) )}
-        </div>
+          )))}
       </div>
 
       <div className="py-4 mb-4 text-center">

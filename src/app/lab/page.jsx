@@ -21,7 +21,7 @@ export default function Lab() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-[-30px] max-w-[80%] m-auto bg-white rounded-lg">
           {lab.map(item => (
             <Card className="pb-4 m-4" key={item.slug} >
-              <Link href={`lab/${item.slug}`}>
+              <Link href={`/lab/${item.slug}`}>
               <Image
                 alt={item.title}
                 className="object-cover rounded-xl m-auto"
