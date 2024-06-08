@@ -5,6 +5,8 @@ import { DiReact, DiNodejs, DiLaravel, DiJsBadge, DiPhp, DiJava, DiPython, DiLin
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaVuejs } from "react-icons/fa";
 import { SiNextdotjs, SiTensorflow } from "react-icons/si";
+import Container from '../elements/Container';
+import Grid from '../elements/Grid';
 
 export default function Tech() {
   const languages = [
@@ -80,10 +82,10 @@ export default function Tech() {
   ]
 
   return (
-    <>
+    <Container>
       <div className='text-center my-4 min-w-full'>
-        <h2>Languages</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-4 max-w-[80%] m-auto rounded-lg">
+        <h2>Top Languages</h2>
+        <Grid classes="mt-4 rounded-lg">
           {languages.map(lang => (
             <Card className="pb-4 m-4" key={lang.title} >
               <Link href={lang.link}>
@@ -94,12 +96,12 @@ export default function Tech() {
               </Link>
             </Card>
           ))}
-        </div>
+        </Grid>
       </div>
 
       <div className='text-center my-4 min-w-full'>
-        <h2>Frameworks & Other Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-4 max-w-[80%] m-auto rounded-lg">
+        <h2>Top Frameworks & Skills</h2>
+        <Grid classes="mt-4 rounded-lg">
           {frameworks.map(framework => (
             <Card className="pb-4 m-4" key={framework.title} >
               <Link href={framework.link}>
@@ -111,8 +113,8 @@ export default function Tech() {
               </Link>
             </Card>
           ))}
-        </div>
+        </Grid>
       </div>
-    </>
+    </Container>
   )
 }

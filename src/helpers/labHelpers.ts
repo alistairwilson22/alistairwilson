@@ -20,7 +20,7 @@ export const getListOfLab = () => {
 
 }
 
-export const getLabContent = (slug) => {
+export const getLabContent = (slug: string) => {
   const file = path.join(process.cwd(), 'src/app/lab', slug) + '.md'
   const content = fs.readFileSync(file, 'utf8')
   return matter(content)

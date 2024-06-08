@@ -16,7 +16,7 @@ export default function Home() {
   const { executeRecaptcha } = useReCaptcha();
 
   const handleFormSubmit = useCallback(
-    async (e) => {
+    async (e: any) => {
       e.preventDefault();
 
       // Generate ReCaptcha token

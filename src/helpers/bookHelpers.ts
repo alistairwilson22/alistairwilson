@@ -20,7 +20,7 @@ export const getListOfBooks = () => {
 
 }
 
-export const getBookContent = (slug) => {
+export const getBookContent = (slug: string) => {
   const file = path.join(process.cwd(), 'src/app/books', slug) + '.md'
   const content = fs.readFileSync(file, 'utf8')
   return matter(content)
