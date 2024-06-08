@@ -9,11 +9,10 @@ export const getListOfBooks = () => {
 
   return mdFiles.map(filename => {
     const contents = fs.readFileSync(path.join(folder, filename), 'utf8')
-    const { data, content } = matter(contents)
+    const { data } = matter(contents)
 
     return {
       ...data,
-      content,
       slug: filename.replace('.md', '')
     }
   })

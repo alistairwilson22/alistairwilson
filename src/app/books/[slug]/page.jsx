@@ -1,6 +1,6 @@
 import { getBookContent } from "@/helpers/bookHelpers"
 import ReactMarkdown from 'react-markdown'
-import {Card, CardBody, CardHeader, Image} from "@nextui-org/react";
+import {Card, CardBody, CardHeader, CardFooter, Button, Image, Link} from "@nextui-org/react";
 
 export default function Book({ params }) {
   const { content, data } = getBookContent(params.slug)
@@ -18,10 +18,23 @@ export default function Book({ params }) {
             max-height="300px"
           />
         <CardBody className="text-center">
-            <h4 className="font-bold text-large">{data.title}</h4>
-            <small className="text-default-500">{data.date}</small>
-            <p className="text-tiny uppercase font-bold">{data.author}</p>
-          </CardBody>
+          <h4 className="font-bold text-large">{data.title}</h4>
+          <small className="text-default-500">{data.date}</small>
+          <p className="text-tiny uppercase font-bold">{data.author}</p>
+        </CardBody>
+        <CardFooter>
+          <div className='inline-block'>
+            {data.tags.map((tag, tagIndex) => { 
+              const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
+              return (
+              <Link key={`${data.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
+                <Button size="sm" radius="full">
+                  {tag}
+                </Button>
+              </Link>
+            )})}
+          </div>
+        </CardFooter>
       </Card>
       </div>
 

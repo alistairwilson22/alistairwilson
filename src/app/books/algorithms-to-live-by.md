@@ -52,3 +52,7 @@ Internet originally followed telephone lines, but soon was moved off that model 
 ## Exponential Backoff
 
 In networking a good way to ensure messages get through is to exponentially increase the delay to allow more time for signal. But this can work in other cases too, eg a relapsing offender. Instead of 3 strikes and you're out, you can exponentially back off. For each offence the delay between forgiveness and acceptance gets larger. This approach allows space for infinite intolerance and infinite mercy at the same time.
+
+## Game Theory
+
+Surprisingly good take on game theory. Game theory is a bigger concept than prisoner's dilemma, but the prisoners dilemma looms so large it's hard to tell the difference. Nash Equilibrium is the idea that for any game there's an equilibrium where the best possible move is know for each party and the rational thing is to do that thing. The only trouble is a) that equilibrium can be impossible or impractical to compute b) often the equilibrium is undesirable eg in the case of the prisoners dilemma or the tragedy of the commons. The good news is undesirable Nash Equilibrium can be fixed by adjusting the parameters of the game. If it's a more rational equilibrium to be altruistic, people will be. For example with climate change, that could be fixed by passing on the costs of negative externalities.

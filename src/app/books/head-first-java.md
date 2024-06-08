@@ -15,9 +15,9 @@ I'm glad I put the time in to learning Java, it's given me a greater appreciatio
 I feel alittle torn over *Heads First Java*. It's intended to be a written in a goofy way and it's aimed at beginners... and I don't really feel like a beginner programmer... but it's alot less dry than *Java in a Nutshell* which I started about the same time and abandoned... so it's definitely a great book series for aspiring developers. It's also a great suppliment to other learning methods as it explains alot of concepts in a conversational question and answer style to point out some of the finer aspects of the subject.
 
 Anyway my takeaways from this book, a better understanding of the following topics:  
-- Encapsulation  
-- Interfaces  
-- Abstract classes  
-- Static classes  
+  - Encapsulation  
+  - Interfaces  
+  - Abstract classes  
+  - Static classes  
 
 It's a good start, I'd quite like to spend some time with the Spring framework at some point and have a Java project in my lab but that's probably going to be a few years down the line I suspect. Also another takeaway... html and css to style an interface has alot going for it compared to Java Swing. Python Turtle Graphic GUIs were more fun than Java Swing too.
