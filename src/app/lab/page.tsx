@@ -19,8 +19,8 @@ export default function Lab() {
       </div>
       
       <ItemGrid 
-      items={labList} 
-      type={ContentType.Lab}
+        items={labList} 
+        type={ContentType.Lab}
       />
       
     </main>

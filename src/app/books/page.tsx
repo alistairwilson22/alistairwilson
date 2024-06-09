@@ -1,7 +1,7 @@
 import { getListOfItems } from '@/helpers/mdContentHelpers';
 import { ContentType, MdContent } from "@/app/types/types"
-import { BookSection } from '@/components/sections/BookSection';
 import FlexCenter from '@/components/elements/FlexCenter';
+import { ItemGrid } from '@/components/sections/ItemGrid';
 
 export default function BookPage() {
   const contentType: ContentType = ContentType.Book
@@ -18,7 +18,10 @@ export default function BookPage() {
         </div>
       </FlexCenter>
       
-      <BookSection books={bookList} />
+      <ItemGrid 
+        items={bookList}
+        type={ContentType.Book}
+      />
 
     </main>
   )
