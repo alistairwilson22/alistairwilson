@@ -1,10 +1,11 @@
-import {getListOfBooks} from '@/helpers/bookHelpers';
-import { Book } from "@/app/types/types"
-import { Books } from '@/components/sections/Books';
+import { getListOfItems } from '@/helpers/mdContentHelpers';
+import { ContentType, MdContent } from "@/app/types/types"
 import FlexCenter from '@/components/elements/FlexCenter';
+import { ItemGrid } from '@/components/sections/ItemGrid';
 
 export default function BookPage() {
-  const books: Book[] = getListOfBooks();
+  const contentType: ContentType = ContentType.Book
+  const bookList = getListOfItems(contentType) as MdContent[];
   
   return (
     <main>
@@ -17,7 +18,10 @@ export default function BookPage() {
         </div>
       </FlexCenter>
       
-      <Books books={books} />
+      <ItemGrid 
+        items={bookList}
+        type={ContentType.Book}
+      />
 
     </main>
   )

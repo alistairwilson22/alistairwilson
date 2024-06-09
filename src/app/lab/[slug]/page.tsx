@@ -1,10 +1,11 @@
-import { getLabContent } from "@/helpers/labHelpers"
+import { getItemContent } from "@/helpers/mdContentHelpers"
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm';
 import {Card, CardBody, CardFooter, Image, Link, Button} from "@nextui-org/react";
+import { ContentType } from "@/app/types/types";
 
-export default function LabItem({ params }) {
-  const { content, data } = getLabContent(params.slug)
+export default function LabItem({ params }: any) {
+  const { content, data } = getItemContent(ContentType.Lab, params.slug)
 
   return (
     <main>
@@ -25,7 +26,7 @@ export default function LabItem({ params }) {
           </CardBody>
           <CardFooter>
             <div className='inline-block'>
-              {data.tags.map((tag, tagIndex) => { 
+              {data.tags.map((tag: string, tagIndex: number) => { 
                 const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
                 return (
                 <Link key={`${data.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
