@@ -25,7 +25,7 @@ export default function Book({ params }: any) {
         </CardBody>
         <CardFooter>
           <div className='inline-block'>
-            {data.tags.map((tag: any, tagIndex: any) => { 
+            {data.tags.map((tag: string, tagIndex: number) => { 
               const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
               return (
               <Link key={`${data.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
