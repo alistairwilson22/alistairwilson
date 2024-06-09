@@ -4,7 +4,7 @@ import { getItemContent } from '@/helpers/mdContentHelpers';
 import { ContentType } from '@/app/types/types';
 
 export default function Book({ params }: any) {
-  const { content, data } = getItemContent(params.slug, ContentType.Book)
+  const { content, data } = getItemContent(ContentType.Book, params.slug)
 
   return (
     <main>

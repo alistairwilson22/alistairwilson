@@ -22,14 +22,14 @@ export const getListOfItems = (type: ContentType) => {
 
 }
 
-export const getItemContent = (slug: string, type: ContentType) => {
+export const getItemContent = (type: ContentType, slug: string) => {
   const folderPath = itemPath(type)
   const file = path.join(process.cwd(), folderPath, slug) + '.md'
   const content = fs.readFileSync(file, 'utf8')
   return matter(content)
 }
 
-export const getFilteredListOfItems = (term: string, type: ContentType): MdContent[] | null => {
+export const getFilteredListOfItems = (type: ContentType, term: string): MdContent[] | null => {
   const item = getListOfItems(type) as MdContent[]
   const filteredItems = item.filter((item: MdContent) => {
     if(!item.tags) {

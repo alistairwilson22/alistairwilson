@@ -1,5 +1,5 @@
 import { ContentType, MdContent } from '@/app/types/types';
-import { getFilteredListOfItems, getListOfItems } from '@/helpers/mdContentHelpers';
+import { getFilteredListOfItems } from '@/helpers/mdContentHelpers';
 import { ItemGrid } from '@/components/sections/ItemGrid';
 
 export default function Tag({ params }: any) {

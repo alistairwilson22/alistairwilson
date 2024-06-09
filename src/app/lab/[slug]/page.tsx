@@ -5,7 +5,7 @@ import {Card, CardBody, CardFooter, Image, Link, Button} from "@nextui-org/react
 import { ContentType } from "@/app/types/types";
 
 export default function LabItem({ params }: any) {
-  const { content, data } = getItemContent(params.slug, ContentType.Lab)
+  const { content, data } = getItemContent(ContentType.Lab, params.slug)
 
   return (
     <main>
