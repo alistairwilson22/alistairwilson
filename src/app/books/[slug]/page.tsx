@@ -1,9 +1,10 @@
-import { getBookContent } from "@/helpers/bookHelpers"
 import ReactMarkdown from 'react-markdown'
-import {Card, CardBody, CardHeader, CardFooter, Button, Image, Link} from "@nextui-org/react";
+import {Card, CardBody, CardFooter, Button, Image, Link} from "@nextui-org/react";
+import { getItemContent } from '@/helpers/mdContentHelpers';
+import { ContentType } from '@/app/types/types';
 
-export default function Book({ params }) {
-  const { content, data } = getBookContent(params.slug)
+export default function Book({ params }: any) {
+  const { content, data } = getItemContent(params.slug, ContentType.Book)
 
   return (
     <main>
@@ -24,7 +25,7 @@ export default function Book({ params }) {
         </CardBody>
         <CardFooter>
           <div className='inline-block'>
-            {data.tags.map((tag, tagIndex) => { 
+            {data.tags.map((tag: any, tagIndex: any) => { 
               const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
               return (
               <Link key={`${data.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>

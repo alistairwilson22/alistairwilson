@@ -1,27 +1,27 @@
 import Image from 'next/image';
 import { Button, Card, CardBody, CardFooter } from '@nextui-org/react';
 import Link from 'next/link';
-import { Book } from '@/app/types/types';
+import { MdContent } from '@/app/types/types';
 import { FC } from 'react';
 import Grid from '../elements/Grid';
 import FlexCenter from '../elements/FlexCenter';
 import Container from '../elements/Container';
 
-interface BookProps {
-  books: Book[];
+interface Props {
+  books: MdContent[] | null;
 }
 
-export const Books: FC<BookProps> = ({ books }) => {
+export const BookSection = ({ books }: Props) => {
 
   return (
     <Container>
-      {books.length == 0 ? (
+      {!books || books.length == 0 ? (
         <FlexCenter>
           <p>I've not added any books here yet</p>
         </FlexCenter>
       ) : (
         <Grid classes="mt-[-30px] bg-white rounded-lg">
-          {books.map((book: Book) => (
+          {books.map((book: MdContent) => (
             <Card className="pb-4 m-4" key={book.slug} >
               <Link href={`/books/${book.slug}`}>
                 <Image
