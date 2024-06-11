@@ -21,10 +21,11 @@ export const ItemGrid = ({ items, type }: Props) => {
         </FlexCenter>
       ) : (
         <Grid classes="mt-[-30px] bg-white rounded-lg">
-          {items.map((item: MdContent) => (
+          {items.map((item: MdContent, index: number) => (
             <ContentCards
               item={item}
               link={`${linkRoot}/${item.slug}`}
+              key={index}
               />
           ))}
         </Grid>
