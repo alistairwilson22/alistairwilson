@@ -56,9 +56,9 @@ export default function NextHeader() {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className="mt-4">
         {links.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item}-${index}`} className="pt-2">
             <Link
               className="w-full text-[#465B65]"
               href={item.href}

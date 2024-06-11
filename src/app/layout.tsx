@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto_Slab, Roboto } from 'next/font/google'
 import './globals.css'
-import Header from '../components/layout/Header';
 import NextHeader from '../components/layout/NextHeader';
 import Footer from '../components/layout/Footer';
 import { ReCaptchaProvider } from "next-recaptcha-v3";

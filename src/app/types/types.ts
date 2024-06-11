@@ -5,7 +5,7 @@ export type MdContent = {
     img?: string;
     tags?: string[];
     slug?: string;
-    content: string;
+    content?: string;
 }
 
 export enum ContentType {
