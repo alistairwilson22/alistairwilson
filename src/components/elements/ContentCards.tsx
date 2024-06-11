@@ -33,7 +33,7 @@ export default function ContentCards({ item, link, textAlign }: Props) {
               const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
               return (
                 <Link key={`${item.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
-                  <Button size="sm" radius="full" className="text-wrap max-w-[100px]">
+                  <Button size="sm" radius="full" className="text-wrap">
                     {tag}
                   </Button>
                 </Link>
