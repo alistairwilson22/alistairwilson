@@ -29,7 +29,7 @@ export default function ContentCards({ item, link, textAlign }: Props) {
       <CardFooter>
         <div className='inline-block'>
           {item.tags && item.tags.length > 0 ?
-            item.tags.map((tag, tagIndex) => {
+            item.tags.map((tag: string, tagIndex: number) => {
               const formattedTag = tag.toLowerCase().replace(/\s+/g, '-');
               return (
                 <Link key={`${item.slug}-${tagIndex}`} href={`/tag/${formattedTag}`} className='m-1 leading-10'>
