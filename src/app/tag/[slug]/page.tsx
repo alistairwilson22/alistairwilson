@@ -1,6 +1,7 @@
 import { ContentType, MdContent } from '@/app/types/types';
 import { getFilteredListOfItems } from '@/helpers/mdContentHelpers';
 import { ItemGrid } from '@/components/sections/ItemGrid';
+import Banner from '@/components/sections/Banner';
 
 export default function Tag({ params }: any) {
   const formattedSlug = params.slug.replace('-', ' ');
@@ -11,12 +12,11 @@ export default function Tag({ params }: any) {
   return (
     <main>
 
-      <div className="bg-[url(/img/background/library-shelves.jpg)] bg-cover h-80 text-white flex flex-col justify-center items-center">
-        <div className="bg-[rgba(0,0,0,0.4)] text-center p-4">
-          <h1 className='p-4 capitalize'>{formattedSlug}</h1>
-          <p></p>
-        </div>
-      </div>
+      <Banner
+        title={formattedSlug}
+        classes="bg-[url(/img/background/nodes.jpg)]"
+        textMode='dark'
+      />
 
       <div className="py-4 mb-4 text-center">
         <h3>Lab work</h3>

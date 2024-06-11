@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {Card, CardBody, Image} from "@nextui-org/react";
 import Tech from '@/components/sections/Tech';
+import Banner from '@/components/sections/Banner';
 
 
 export default function About() {
@@ -8,13 +9,13 @@ export default function About() {
   return (
     <main className='text-center'>
 
-      <div className="bg-[url(/img/background/causeway1.jpg)] bg-cover h-80 flex flex-col justify-center items-center">
-        <div className="bg-[rgba(255,255,255,0.4)] text-center p-4">
-          <h1 className='p-4 mt-0'>About</h1>
-          <p>Welcome to my website.</p>
-          <p>If you're wondering what this website is and who it's for, you've come to the right page</p>
-        </div>
-      </div>
+      <Banner
+        title="About"
+        lineOne="Welcome to my website."
+        lineTwo="If you're wondering what this website is and who it's for, you've come to the right page."
+        classes="bg-[url(/img/background/causeway1.jpg)]"
+        textMode='dark'
+      />
       
       <div className='px-24 pt-12 border-bottom'>
         <h2>Who am I?</h2>
