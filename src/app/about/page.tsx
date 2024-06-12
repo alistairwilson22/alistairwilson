@@ -72,7 +72,7 @@ export default function About() {
 
       <div className='px-24 py-12'>
         <h2>Can I see your CV?</h2>
-        <p>Sure you can, you can see an online version at <a href="http://cv.alistairwilson.co.uk">http://cv.alistairwilson.co.uk</a></p>
+        <p>Sure you can, you can see an online version at <a href="https://alistairwilson22.github.io/cv/">https://alistairwilson22.github.io/cv/</a></p>
       </div>
       
     </main>
