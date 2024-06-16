@@ -1,7 +1,7 @@
 ---
 title: 'Algorithms To Live By'
 author: 'Brian Christian & Tom Griffiths'
-date: '13-12-2023'
+date: '13-12-2022'
 img: '/img/books/algorithms-to-live-by.jpg'
 tags:
   -  Algorithms

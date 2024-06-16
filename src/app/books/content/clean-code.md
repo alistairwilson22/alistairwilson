@@ -1,7 +1,7 @@
 ---
 title: 'Clean Code'
 author: 'Robert C. Martin'
-date: '01-12-2023'
+date: '01-12-2022'
 img: '/img/books/clean-code.jpg'
 tags:
   -  Best Practices

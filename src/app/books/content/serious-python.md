@@ -7,8 +7,6 @@ tags:
   -  Python
 ---
 
-**READING STILL IN PROGRESS**
-
 I like this kind of book. It's short, written by someone with good knowledge of the subject and covers things I don't tend to work on much professionally but gives context when I do get on it. There's interviews at the end of each chapter providing an insight from different senior developers too.
 
 Tips: 
