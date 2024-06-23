@@ -1,7 +1,7 @@
 ---
 title: 'Code: The Hidden Language of Computer Hardware and Software'
 author: 'Charles Petzold'
-date: '10-06-2023'
+date: '10-06-2022'
 img: '/img/books/Code-Hidden-Language.jpg'
 tags:
   -  Hardware

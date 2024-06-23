@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import {Card, CardBody, Image} from "@nextui-org/react";
 import Tech from '@/components/sections/Tech';
 import Banner from '@/components/sections/Banner';
 
@@ -43,7 +41,7 @@ export default function About() {
 
       <div className='px-24 pt-12'>
         <h2>Who are you?</h2>
-        <p>I'm a believer of writing to an intended audience. The writing style in documentation for example would be quite different if for a customer vs internal developer notes.</p>
+        <p>I'm a believer of writing to an intended audience. The writing style in documentation for example should be quite different for a customer vs internal developer notes.</p>
         <p>So there's a few different audiences I have in mind with this website</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
           <div className='m-4 p-2'>
@@ -60,12 +58,12 @@ export default function About() {
           </div>
           <div className='m-4 p-2'>
             <h4>Recruiters / employers</h4>
-            <p>This website is also with you in mind. What can I say except your welcome!</p>
-            <p>The parts you'll find most interesting are the projects in the lab.</p>
+            <p>This website is also with you in mind (your welcome).</p>
+            <p>The parts you might find most interesting are the projects in the lab.</p>
             <p>You can check out the professional books section, the notes on each book probably isn't going to be the most interesting thing to you, but you can get a flavour of some of my interests from the job titles and the tags.</p>
           </div>
         </div>
-        <p>Check out the section below on what my main tech stack experiences are, although I'm open to exploring more and different ones.</p>
+        <p>Check out the section below on what my main tech stack experiences are, although I'm open to exploring and working with different tech (especially Rust and Go at the time of writing).</p>
       </div>
 
       <Tech />
