@@ -21,3 +21,5 @@ Here's some notes for myself on the different design patterns:
   -  **Observer** - When there's a publisher (or subject) that needs to trigger updates on various observers, instead of adding a function in the subject for each observer that should be abstracted out into a subject class that stores a list of observers and a method to subscribe or unsubscribe to these updates. This follows the Open/Closed Principle.   
   -  **Decorator** - 
   -  **Factory Methods** & **Abstract Factories** - Both intend to follow Dependency Inversion Principle. Factory Method does this using inheritance. Abstract Factory uses object composition and often includes a factory method. Factory Method relies on inherited subclass to define the composition
+  - **Singleton** - The highlander method (there can be only one). Examples include logging. Create using a private constructor and static method that calls the constructor. It's good to ensure constants aren't added twice and split use.
+  
