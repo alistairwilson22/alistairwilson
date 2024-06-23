@@ -4,7 +4,7 @@ author: 'Saleem Siddiqui'
 date: '15-12-2023'
 img: '/img/books/learning-test-driven-development.jpg'
 tags:
-  -  Test Driven Development
+  -  TDD
   -  Javascript
   -  Go
   -  Python
