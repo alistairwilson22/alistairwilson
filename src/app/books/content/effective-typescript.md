@@ -21,3 +21,10 @@ Other notes:
   -  Index signatures (eg Key: string: string) should be avoided as they let alot through (including typos in field names). They are useful if the content really is dynamic like CSV headers. 
   -  Typescript has a "readonly" option to maintain immutability. Best practice to use readonly unless you really do need mutability like with a third party library perhaps.
   -  Readonly<> (for objects) and readonly (for arrays) are shallow, the value can still be changed. You can use DeepReadonly from ts-essentials if you really want to force read only
+  -  TS interpreter can be narrower with const than let. Switching to const can solve a host of TS interpreter related errors. TS interpreter deals better with objects fully formed than with objects that have properties added to incrementally in the code.
+  -  Simple types test: create a const x: X[] = [...] fille the array with examples, compile and see the types errors
+  -  Too much strings in types can be called "Stringly typed" (not strongly). Use alternatives to string to be more precise. Eg Date, enum, union types. Union types are generally better than enums!
+  -  Generate types from API specs not just seen data. This helps cover unseen cases. If the API has a types package, use that.
+  -  Add comments /** */ instead of // for jsdocs support. Add in @param and @returns for TS support to explain inputs and outputs. TS docs / jsdocs support mark down too. These docs show in IDEs when functions are used.
+  -  Any is contagious and spreads throughout the code. Better to use //@ts-ignore if you really know better than TS to avoid that contagion.
+  
