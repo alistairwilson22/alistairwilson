@@ -21,5 +21,7 @@ Tips:
   -  Many devs use data structures without utilising their built in methods. Instead of using if/else or for loops check out if a data structure has a built in (more performant) way of doing the same thing.
   -  Instead of iterating over a list to find an item, compare 2 sets. That'll compare the objects entirely in an O(1) process instead of O(n)
   -  To optimise, use built in *cProfile* to assess how often functions are run and their running times. Combine with *pyprof2calltree* to help visualise.
+  -  Consider named tuples over dictionaries to reduce memory.
+  -  functools.lru_cache adds a memorization based on most recent values with max size. If there's lots of misses, it's not worth having though.
 
 
